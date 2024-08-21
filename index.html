@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Car Enthusiasts Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Explore the World of Cars</title>
+    <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
     <header>
         <div class="container">
-            <h1>Welcome to Car Enthusiasts</h1>
+            <h1>Explore the World of Cars</h1>
             <nav>
                 <ul>
-                    <li><a href="#about">About</a></li>
+                    <li><a href="#home">Home</a></li>
                     <li><a href="#models">Models</a></li>
-                    <li><a href="#services">Services</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -23,62 +26,129 @@
 
     <section id="hero">
         <div class="container">
-            <h2>Your Dream Car Awaits</h2>
-            <p>Discover the latest models, reviews, and services for all car enthusiasts.</p>
-        </div>
-    </section>
-
-    <section id="about" class="section">
-        <div class="container">
-            <h2>About Us</h2>
-            <p>We are dedicated to providing the best information and services for car enthusiasts worldwide.</p>
+            <h2>Your Ultimate Car Experience</h2>
+            <p>Discover the finest cars and innovations in the automotive world.</p>
+            <a href="#models" class="btn">Explore Models</a>
         </div>
     </section>
 
     <section id="models" class="section">
         <div class="container">
-            <h2>Popular Car Models</h2>
-            <div class="row">
-                <div class="column">
-                    <h3>Sedan</h3>
-                    <p>Experience the comfort and elegance of our top sedan models.</p>
-                </div>
-                <div class="column">
-                    <h3>SUV</h3>
-                    <p>Find the perfect SUV for your family with our comprehensive reviews.</p>
-                </div>
-                <div class="column">
-                    <h3>Sports Cars</h3>
-                    <p>Unleash the power and speed with our selection of sports cars.</p>
+            <h2>Featured Car Models</h2>
+            <div class="card-container">
+                <div class="card-wrapper">
+                    <div class="card">
+                        <img src="./images/jeep1.jpg" alt="Jeep">
+                        <div class="card-content">
+                            <h3>Jeep</h3>
+                            <p>Elegant and comfortable, perfect for city driving.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./images/jeep2.webp" alt="SUV">
+                        <div class="card-content">
+                            <h3>Jeep 3</h3>
+                            <p>Spacious and versatile, ideal for family adventures.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./images/jeep2.webp" alt="Jeep">
+                        <div class="card-content">
+                            <h3>Jeep 14</h3>
+                            <p>High-performance and stylish, for the thrill-seekers.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="services" class="section">
+    <section id="carousel" class="section">
         <div class="container">
-            <h2>Our Services</h2>
-            <div class="row">
-                <div class="column">
-                    <h3>Car Reviews</h3>
-                    <p>Get detailed reviews on the latest models from experts.</p>
+            <h2>Featured Cars Carousel</h2>
+            <div class="carousel">
+                <div class="carousel-item">
+                    <img src="./images/jeep3.png" alt="Car 1">
+                    <p>Car 1: Innovation meets style.</p>
                 </div>
-                <div class="column">
-                    <h3>Maintenance Tips</h3>
-                    <p>Learn how to keep your car in top condition with our maintenance tips.</p>
+                <div class="carousel-item">
+                    <img src="./images/jeep-compass.jpg" alt="Car 2">
+                    <p>Car 2: The future of driving.</p>
                 </div>
-                <div class="column">
-                    <h3>Buying Guides</h3>
-                    <p>Find the best deals with our in-depth buying guides.</p>
+                <div class="carousel-item">
+                    <img src="./images/jeep-compass_website.jpg" alt="Car 3">
+                    <p>Car 3: Experience luxury.</p>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section id="features" class="section">
+        <div class="container">
+            <h2>Why Choose Us?</h2>
+            <div class="feature">
+                <div class="icon">🚗</div>
+                <h3>Innovative Design</h3>
+                <p>We offer cutting-edge designs that push the boundaries of automotive technology.</p>
+            </div>
+            <div class="feature">
+                <div class="icon">🔧</div>
+                <h3>Expert Reviews</h3>
+                <p>Our team provides detailed and unbiased reviews to help you make the best choice.</p>
+            </div>
+            <div class="feature">
+                <div class="icon">📈</div>
+                <h3>Comprehensive Guides</h3>
+                <p>Access in-depth guides to get the most out of your car buying experience.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="section">
+        <div class="container">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonial">
+                <p>"This site helped me find the perfect car for my needs. The reviews were spot-on and very helpful!"
+                </p>
+                <cite>— Alex J.</cite>
+            </div>
+            <div class="testimonial">
+                <p>"Great experience! The car buying guides were thorough and made my decision much easier."</p>
+                <cite>— Jamie L.</cite>
+            </div>
+            <div class="testimonial">
+                <p>"The selection of car models is fantastic, and the information provided was incredibly useful."</p>
+                <cite>— Taylor M.</cite>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Car Enthusiasts. All rights reserved.</p>
+            <p>Explore the World of Cars. All rights reserved.</p>
         </div>
     </footer>
 </body>
+
 </html>
